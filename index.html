@@ -1,0 +1,95 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            Restaurant website!
+        </title>
+        <link rel="stylesheet" href="style.css"/>
+        <script>
+            const image=["./imgs/02.png","./imgs/03.png","./imgs/burger.jpg","./imgs/right_sidebar_img.jpg"];
+            function changeImg()
+            {
+                const num = Math.floor(Math.random()*image.length);
+                const img_num=image[num];
+                document.getElementById("demo").src=img_num;
+            }
+        </script>
+    </head>
+    <body>
+        <aside id="sp_offer">
+            <div class="container">
+                <div class="sp_content">
+                    <div class="left_side_content">
+                        <div class="headings">
+                            <h4><a href="mainpage.html">Go back to Home page</a></h4>
+                            <h3>From the Menu</h3>
+                            <h2>SPECIAL OFFERS</h2>
+                        </div>
+                        <div class="imgs_content">
+                            <div class="imgs">
+                                <img src="imgs/02.png" alt="" />
+                                <div class="content_for_img">
+                                    <h4>Dosa</h4>
+                                    <p>
+                                        Most famous south-indian dish.
+                                    </p>
+                                    <p>    
+                                        With special masala and chutney.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p>$10</p>
+                            </div>
+                        </div>
+                        <div class="imgs_content">
+                            <div class="imgs">
+                                <img src="imgs/03.png" alt="" />
+                                <div class="content_for_img">
+                                    <h4>Idli</h4>
+                                    <p>
+                                        Soft and small, tasty to eat!
+                                    </p>
+                                    <p>
+                                        With our famous pudina chutney.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class= "price">
+                                <p>$10</p>
+                            </div>
+                        </div> 
+                        <div class="imgs_content">
+                            <div class="imgs">
+                                <img src="imgs/04.png" alt="" />
+                                <div class="content_for_img">
+                                    <h4>Thali</h4>
+                                    <p>
+                                        Full size North-Indian thali comprising of everything.
+                                    </p>
+                                    <p>
+                                        3 Vegetables, 2 Dals, Rice, Rotis, Curd, Salad.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <p>$10</p>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="right_side_content">
+                        <div class="img_right_side">
+                            <img id="demo" src="imgs/right_sidebar_img.jpg" alt="" />
+                            <div class="over_img">
+                                <a href="#"><h2>Menus</h2></a>
+                            </div>
+                            <br>
+                            <button id="demo" type="button" onclick="changeImg()">Change image!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </body>
+</html>
